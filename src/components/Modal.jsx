@@ -13,7 +13,7 @@ export default function Modal({ setIsOpen }) {
     return () => {
       document.removeEventListener('click', handleCheck, true);
     };
-  });
+  }, [setIsOpen]);
 
   return (
     <div className='popup-wrapper'>
